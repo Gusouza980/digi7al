@@ -19,7 +19,7 @@ class UsuarioAdmin
         if(session()->get("usuario")){
             return $next($request);
         }else{
-            toastr()->error("Você não pode acessar essa página !");
+            // toastr()->error("Você não pode acessar essa página !");
             return redirect()->route("painel.login");
         }
         return $next($request);

@@ -88,7 +88,7 @@ class ClientesController extends Controller
 
         Log::channel('cadastros')->info('<b>CADASTRANDO CLIENTE #'.$cliente->id.'</b>: O usuario <b>' . session()->get("usuario")["usuario"] . '</b> cadastrou o cliente <b>' . $cliente->nome . '</b>.');
 
-        toastr()->success("Cliente cadastrado com sucesso!");
+        // toastr()->success("Cliente cadastrado com sucesso!");
         return redirect()->route("painel.clientes");
     }
 
@@ -185,7 +185,7 @@ class ClientesController extends Controller
 
         $cliente->save();
 
-        toastr()->success("Cadastro atualizado com sucesso!");
+        // toastr()->success("Cadastro atualizado com sucesso!");
         return redirect()->route('painel.clientes');
     }
 
@@ -286,7 +286,7 @@ class ClientesController extends Controller
         $elemento->posicao = $request->posicao;
         $elemento->save();
 
-        toastr()->success("Elemento adicionado ao links da(o) " . $cliente->nome);
+        // toastr()->success("Elemento adicionado ao links da(o) " . $cliente->nome);
         return redirect()->back()->with("meuslinks", "meuslinks");
     }
 
@@ -303,14 +303,14 @@ class ClientesController extends Controller
         $elemento->posicao = $request->posicao;
         $elemento->save();
 
-        toastr()->success("Elemento salvo com sucesso");
+        // toastr()->success("Elemento salvo com sucesso");
         return redirect()->back()->with("meuslinks", "meuslinks");
     }
 
     public function remover_rede(Elementos $elemento){
         Storage::delete($elemento->imagem);
         $elemento->delete();
-        toastr()->success("Elemento removido com sucesso");
+        // toastr()->success("Elemento removido com sucesso");
         return redirect()->back()->with("meuslinks", "meuslinks");
     }
 

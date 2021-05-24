@@ -32,7 +32,7 @@ class UsuariosController extends Controller
         $usuario->senha = Hash::make($request->senha);
         $usuario->save();
 
-        toastr()->success("Cadastro realizado com sucesso!");
+        // toastr()->success("Cadastro realizado com sucesso!");
         return redirect()->back();
     }
 
@@ -54,7 +54,7 @@ class UsuariosController extends Controller
         }
         $usuario->save();
 
-        toastr()->success("Cadastro atualizdo com sucesso!");
+        // toastr()->success("Cadastro atualizdo com sucesso!");
         return redirect()->route('painel.usuarios');
     }
 

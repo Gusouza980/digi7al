@@ -23,7 +23,7 @@ $usuario = \App\Models\Usuario::find(session()->get("usuario")["id"]);
         <link href="{{asset('admin/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- App Css-->
         <link href="{{asset('admin/css/app.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
-        @toastr_css
+        {{--  @toastr_css  --}}
         @yield("styles")
     </head>
 
@@ -174,8 +174,8 @@ $usuario = \App\Models\Usuario::find(session()->get("usuario")["id"]);
         <script src="{{asset('admin/libs/metismenu/metisMenu.min.js')}}"></script>
         <script src="{{asset('admin/libs/simplebar/simplebar.min.js')}}"></script>
         <script src="{{asset('admin/libs/node-waves/waves.min.js')}}"></script>
-        @toastr_js
-        @toastr_render
+        {{--  @toastr_js
+        @toastr_render  --}}
 
         <!-- App js -->
         <script src="{{asset('admin/js/app.js')}}"></script>

@@ -30,10 +30,10 @@ class PainelController extends Controller
                 Log::channel('acessos')->info('<b>LOGIN</b>: O usuario <b>' . $usuario->usuario . '</b> logou no sistema.');
                 return redirect()->route("painel.index");
             }else{
-                toastr()->error("Informações de usuário incorretas!");
+                // toastr()->error("Informações de usuário incorretas!");
             }
         }else{
-            toastr()->error("Informações de usuário incorretas!");
+            // toastr()->error("Informações de usuário incorretas!");
         }
 
         return redirect()->back();
