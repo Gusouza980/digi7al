@@ -15,7 +15,7 @@ class SiteController extends Controller
     }
     //
     public function index($slug){
-        if($slug == 'dashboard'){
+        if($slug == 'sistema'){
             return redirect()->route("painel.index");
         }
         $cliente = Cliente::where([["slug", $slug], ["ativo", true]])->first();

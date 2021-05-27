@@ -33,6 +33,8 @@ class ClientesController extends Controller
         $cliente->cidade = $request->cidade;
         $cliente->estado = $request->estado;
         $cliente->cep = $request->cep;
+        $cliente->complemento = $request->complemento;
+
         $cliente->url = $request->url;
 
         $cliente->nome_proprietario = $request->nome_proprietario;
@@ -106,6 +108,8 @@ class ClientesController extends Controller
         $cliente->cidade = $request->cidade;
         $cliente->estado = $request->estado;
         $cliente->cep = $request->cep;
+        $cliente->complemento = $request->complemento;
+
         $cliente->url = $request->url;
 
         $cliente->nome_proprietario = $request->nome_proprietario;
