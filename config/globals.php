@@ -13,6 +13,12 @@ return [
         8 => "Tiktok",
         9 => "Email"
     ],
+    'planos' => [
+        0 => "Nenhum",
+        1 => "Start",
+        2 => "Basic",
+        3 => "Plus",
+    ],
 ];
 
 ?>

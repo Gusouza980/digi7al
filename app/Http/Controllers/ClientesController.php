@@ -43,8 +43,9 @@ class ClientesController extends Controller
         $cliente->cpf_proprietario = $request->cpf_proprietario;
         $cliente->cnpj_proprietario = $request->cnpj_proprietario;
         $cliente->nascimento_proprietario = $request->nascimento_proprietario;
-        
+
         $cliente->ativo = $request->ativo;
+        $cliente->plano = $request->plano;
 
         $cliente->whatsapp = $request->whatsapp;
 
@@ -123,7 +124,8 @@ class ClientesController extends Controller
         $cliente->nascimento_proprietario = $request->nascimento_proprietario;
 
         $cliente->ativo = $request->ativo;
-
+        $cliente->plano = $request->plano;
+        
         $cliente->observacoes = $request->observacoes;
 
         $cliente->titulo = $request->titulo;

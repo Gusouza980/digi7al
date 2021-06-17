@@ -26,6 +26,7 @@
                             <th>Email</th>
                             <th>Telefone</th>
                             <th>Proprietário</th>
+                            <th>Plano</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -38,6 +39,7 @@
                                 <td>{{$cliente->email}}</td>
                                 <td>{{$cliente->telefone}}</td>
                                 <td>{{$cliente->nome_proprietario}}</td>
+                                <td>{{config("globals.planos")[$cliente->plano]}}</td>
                                 <td>
                                     <a name="" id="" class="btn btn-warning" href="{{route('painel.cliente.editar', ['cliente' => $cliente])}}" role="button">Editar</a>
                                     <a class="btn btn-primary mx-1" href="{{route('painel.cliente.relatorio', ['cliente' => $cliente])}}">Relatório</a>

@@ -134,6 +134,16 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="mb-3">
+                                <label for="plano" class="form-label">Plano</label>
+                                <select class="form-select" name="plano">
+                                    @foreach(config("globals.planos") as $key => $plano)
+                                        <option value="{{$key}}">{{$plano}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
                     <hr>
