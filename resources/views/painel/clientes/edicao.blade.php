@@ -181,6 +181,24 @@
                                         <input type="text" class="form-control" name="telefone_proprietario" id="telefone_proprietario" value="{{$cliente->telefone_proprietario}}">
                                     </div>
                                 </div>
+                                <div class="col-lg-4 col-12">
+                                    <div class="mb-3">
+                                        <label for="cpf_proprietario" class="form-label">CPF</label>
+                                        <input type="text" class="form-control" name="cpf_proprietario" id="cpf_proprietario" maxlength="20" value="{{$cliente->cpf_proprietario}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-12">
+                                    <div class="mb-3">
+                                        <label for="cnpj_proprietario" class="form-label">CNPJ</label>
+                                        <input type="text" class="form-control" name="cnpj_proprietario" id="cnpj_proprietario" maxlength="20" value="{{$cliente->cnpj_proprietario}}">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-12">
+                                    <div class="mb-3">
+                                        <label for="nascimento_proprietario" class="form-label">Nascimento</label>
+                                        <input type="date" class="form-control" name="nascimento_proprietario" id="nascimento_proprietario" value="{{$cliente->nascimento_proprietario}}">
+                                    </div>
+                                </div>
                             </div>
         
                             <hr>

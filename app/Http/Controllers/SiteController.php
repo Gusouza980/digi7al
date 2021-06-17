@@ -7,12 +7,14 @@ use App\Models\Cliente;
 use App\Models\Visitante;
 use App\Models\Acesso;
 use App\Models\Click;
+use App\Classes\Email;
 
 class SiteController extends Controller
 {
     public function landing(){
         return view("landing");
     }
+    
     //
     public function index($slug){
         if($slug == 'sistema'){
@@ -78,5 +80,17 @@ class SiteController extends Controller
         }
         $click->save();
         return response()->json("sucesso");
+    }
+
+    public function enviar(Request $request){
+        $msg = "<b>Nome</b>: " . $request->nome . "<br>";
+        $msg .= "<b>Email</b>: " . $request->email . "<br>";
+        $msg .= "<b>Mensagem</b>: <br><br>" . $request->mensagem;
+        $res = Email::enviar($msg, "Contato", "7seventrends.7digital@gmail.com", true);
+        if($res){
+            return response()->json("sucesso", 200);
+        }else{
+            return response()->json("erro", 200);
+        }
     }
 }

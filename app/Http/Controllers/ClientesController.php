@@ -40,7 +40,10 @@ class ClientesController extends Controller
         $cliente->nome_proprietario = $request->nome_proprietario;
         $cliente->telefone_proprietario = $request->telefone_proprietario;
         $cliente->email_proprietario = $request->email_proprietario;
-
+        $cliente->cpf_proprietario = $request->cpf_proprietario;
+        $cliente->cnpj_proprietario = $request->cnpj_proprietario;
+        $cliente->nascimento_proprietario = $request->nascimento_proprietario;
+        
         $cliente->ativo = $request->ativo;
 
         $cliente->whatsapp = $request->whatsapp;
@@ -115,6 +118,9 @@ class ClientesController extends Controller
         $cliente->nome_proprietario = $request->nome_proprietario;
         $cliente->telefone_proprietario = $request->telefone_proprietario;
         $cliente->email_proprietario = $request->email_proprietario;
+        $cliente->cpf_proprietario = $request->cpf_proprietario;
+        $cliente->cnpj_proprietario = $request->cnpj_proprietario;
+        $cliente->nascimento_proprietario = $request->nascimento_proprietario;
 
         $cliente->ativo = $request->ativo;
 
