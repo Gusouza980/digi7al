@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/{slug}', [\App\Http\Controllers\SiteController::class, 'index'])->name("site.index");
 Route::get('/', [\App\Http\Controllers\SiteController::class, 'landing'])->name("site.landing");
+Route::post('/contato/enviar', [\App\Http\Controllers\SiteController::class, 'enviar'])->name("site.contato.enviar");
 
 Route::get('/sistema/login', [\App\Http\Controllers\PainelController::class, 'login'])->name("painel.login");
 Route::post('/sistema/logar', [\App\Http\Controllers\PainelController::class, 'logar'])->name("painel.logar");

@@ -15,7 +15,7 @@ $usuario = \App\Models\Usuario::find(session()->get("usuario")["id"]);
         <meta name="_token" content="{{ csrf_token() }}">
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{asset('admin/images/favicon.png')}}">
+        <link rel="icon" href="{{asset('favicon.ico')}}" sizes="32x32" type="image/png">
 
         <!-- Bootstrap Css -->
         <link href="{{asset('admin/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
