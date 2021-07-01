@@ -7,11 +7,14 @@
 @endsection
 
 @section('titulo')
-    Listagem de Clientes
+    Listagem de Clientes {{ucfirst($filtro)}}
 @endsection
 
 @section('botoes')
-<a name="" id="" class="btn btn-success" href="{{route('painel.cliente.cadastro')}}" role="button">Novo CLiente</a>
+    <a name="" id="" class="btn btn-success" href="{{route('painel.cliente.cadastro')}}" role="button">Novo CLiente</a>
+    <a name="" id="" class="btn btn-primary" href="{{route('painel.clientes', ['filtro' => 'ativos'])}}" role="button">Ativos</a>
+    <a name="" id="" class="btn btn-primary" href="{{route('painel.clientes', ['filtro' => 'inativos'])}}" role="button">Inativos</a>
+    <a name="" id="" class="btn btn-primary" href="{{route('painel.clientes')}}" role="button">Todos</a>
 @endsection
 
 @section('conteudo')

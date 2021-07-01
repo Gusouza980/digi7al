@@ -12,9 +12,16 @@ use App\Models\Elementos;
 class ClientesController extends Controller
 {
     //
-    public function consultar(){
-        $clientes = Cliente::all();
-        return view("painel.clientes.consultar", ["clientes" => $clientes]);
+    public function consultar($filtro = null){
+
+        if(!$filtro)
+            $clientes = Cliente::all();
+        elseif($filtro == 'ativos')
+            $clientes = Cliente::where("ativo", true)->get();
+        else
+            $clientes = Cliente::where("ativo", false)->get();
+
+        return view("painel.clientes.consultar", ["clientes" => $clientes, "filtro" => $filtro]);
     }
 
     public function cadastro(){
