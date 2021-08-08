@@ -12,4 +12,8 @@ class Cliente extends Model
     public function elementos(){
         return $this->hasMany(Elementos::class);
     }
+
+    public function leads(){
+        return $this->hasMany(Lead::class);
+    }
 }
