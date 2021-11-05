@@ -311,10 +311,11 @@ class ClientesController extends Controller
     }
 
     public function salvar_rede(Request $request, Elementos $elemento){
+        $cliente = Cliente::find($elemento->cliente_id);
         if($request->file("imagem")){
             Storage::delete($elemento->imagem);
             $elemento->imagem = $request->file('imagem')->store(
-                'admin/images/rede/'.Str::slug($elemento->imagem), 'local'
+                'admin/images/rede/'.Str::slug($cliente->nome), 'local'
             );
         }
 
