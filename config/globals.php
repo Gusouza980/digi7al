@@ -11,7 +11,8 @@ return [
         6 => "Twitter",
         7 => "Youtube",
         8 => "Tiktok",
-        9 => "Email"
+        9 => "Email",
+        10 => "Google Meu Negócio"
     ],
     'planos' => [
         0 => "Nenhum",

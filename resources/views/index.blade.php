@@ -102,7 +102,10 @@
         .email > svg:hover{
             color: #fbbc05;
         }
-        .google_negocio > i:hover{
+        .google_negocio > svg{
+            color: white;
+        }
+        .google_negocio > svg:hover{
             color: #fbbc05;
         }
     </style>
@@ -165,7 +168,7 @@
                     <a class="youtube link-rede" rede="7" target="_blank" href="{{$cliente->youtube}}"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a>
                 @endif
                 @if($cliente->google_negocio)
-                    <a class="google_negocio link-rede" rede="7" target="_blank" href="{{$cliente->google_negocio}}"><i class="fa-brands fa-google" style="color: white; width: 18px;"></i></a>
+                    <a class="google_negocio link-rede" rede="10" target="_blank" href="{{$cliente->google_negocio}}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg></a>
                 @endif
             </div>
         </div>
