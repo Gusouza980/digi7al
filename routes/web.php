@@ -37,7 +37,7 @@ Route::middleware(['admin'])->group(function () {
     Route::post('/sistema/usuarios/salvar/{usuario}', [\App\Http\Controllers\UsuariosController::class, 'salvar'])->name("painel.usuario.salvar");
     
     // ROTAS DE CLIENTES
-    Route::get('/sistema/clientes', [\App\Http\Controllers\ClientesController::class, 'consultar'])->name("painel.clientes");
+    Route::get('/sistema/clientes/{filtro?}', [\App\Http\Controllers\ClientesController::class, 'consultar'])->name("painel.clientes");
     Route::get('/sistema/cliente/cadastro', [\App\Http\Controllers\ClientesController::class, 'cadastro'])->name("painel.cliente.cadastro");
     Route::post('/sistema/cliente/cadastrar', [\App\Http\Controllers\ClientesController::class, 'cadastrar'])->name("painel.cliente.cadastrar");
     Route::get('/sistema/cliente/relatorio/{cliente}', [\App\Http\Controllers\ClientesController::class, 'relatorio'])->name("painel.cliente.relatorio");
