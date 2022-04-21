@@ -24,7 +24,9 @@ $usuario = \App\Models\Usuario::find(session()->get("usuario")["id"]);
         <!-- App Css-->
         <link href="{{asset('admin/css/app.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
         {{--  @toastr_css  --}}
+        @livewireStyles
         @yield("styles")
+        @stack("styles")
     </head>
 
     <body data-sidebar="dark">
@@ -188,7 +190,9 @@ $usuario = \App\Models\Usuario::find(session()->get("usuario")["id"]);
 
         <!-- App js -->
         <script src="{{asset('admin/js/app.js')}}"></script>
+        @livewireScripts
         @yield("scripts")
+        @stack("scripts")
     </body>
 
 </html>
