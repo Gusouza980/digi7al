@@ -782,7 +782,7 @@
                     }
                 });  
                 $.ajax({
-                    url: '/sistema/clientes/rede/' + id,
+                    url: '/sistema/cliente/rede/' + id,
                     type: 'POST',
                     data: {
                         name: name

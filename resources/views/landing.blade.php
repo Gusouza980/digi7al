@@ -110,9 +110,8 @@
             <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true"
                 class="col-md-4 text-center py-4 mt-5">
                 <h4 class="my-4">START</h4>
-                <p class="font-weight-bold">R$ <span class="display-2 font-weight-bold">169</span> / MÊS.</p>
+                <p class="font-weight-bold">R$ <span class="display-2 font-weight-bold">229</span> / MÊS.</p>
                 <ul class="list-unstyled">
-                    <li class="mt-3">Site Institucional*</li>
                     <li class="mt-3">Gestão de Facebook e Instagram, com geração de conteúdo e desing</li>
                     <li class="mt-3">15 publicações / mês</li>
                     <li class="mt-3">Cartão Digital Interativo</li>
@@ -127,11 +126,11 @@
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"
                 class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
                 <h4 class="my-4">PLUS</h4>
-                <p class="font-weight-bold">R$ <span class="display-2 font-weight-bold">349</span> / MÊS.</p>
+                <p class="font-weight-bold">R$ <span class="display-2 font-weight-bold">419</span> / MÊS.</p>
                 <ul class="list-unstyled">
                     <li class="mt-3">Site Institucional*</li>
                     <li class="mt-3">Gestão de Facebook, Instagram, Whatsapp, Tiktok, Youtube, Twitter, Pinterest, Linkedin com geração de conteúdo e desing</li>
-                    <li class="mt-3">30 publicações / mês</li>
+                    <li class="mt-3">20 publicações / mês</li>
                     <li class="mt-3">Agendamento de publicações e monitoramento</li>
                     <li class="mt-3">Cartão Digital Interativo</li>
                     <li class="mt-3">5 E-mail personalizado</li>
@@ -148,7 +147,7 @@
             <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true"
                 class="col-md-4 text-center py-4 mt-5">
                 <h4 class="my-4">BASIC</h4>
-                <p class="font-weight-bold">R$ <span class="display-2 font-weight-bold">229</span> / MÊS.</p>
+                <p class="font-weight-bold">R$ <span class="display-2 font-weight-bold">289</span> / MÊS.</p>
                 <ul class="list-unstyled">
                     <li class="mt-3">Site Institucional*</li>
                     <li class="mt-3">Gestão de Facebook e Instagram, com geração de conteúdo e desing</li>
