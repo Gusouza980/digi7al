@@ -248,6 +248,9 @@
                     ®2021 Digi7al - Todos os direitos reservados
                 </div>
                 <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="{{ URL::asset('transformacao.pdf') }} " class="d-inline-block text-center ml-2">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                    </a>
                     <a href="#" class="d-inline-block text-center ml-2">
                         <i class="fab fa-facebook" aria-hidden="true"></i>
                     </a>
